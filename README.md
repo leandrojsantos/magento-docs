@@ -14,12 +14,19 @@ enviar produtos e gestão de pedidos;
 relatórios e outras funcionalidades.
 Confira as principais características da plataforma de e-commerce de código-fonte aberto:
 
-Linguagem de programação	PHP
-Banco de dados	MY-SQL ou MariaDB
-Sistema operacional	Todos (multiplataforma)
-Multi-idioma	SIM
-Suporte para múltiplas moedas	SIM
-Recursos para SEO	Avançado
-Suporte para localização Brasil	Completa
-Licença	OSL Ver. 3 / AFL Ver. 3
+  Linguagem de programação	PHP,
+  
+  Banco de dados	MY-SQL ou MariaDB,
+  
+  Sistema operacional	Todos (multiplataforma),
+  
+  Multi-idioma	SIM,
+  
+  Suporte para múltiplas moedas	SIM,
+  
+  Recursos para SEO	Avançado,
+  
+  Suporte para localização Brasil	Completa,
+  
+  Licença	OSL Ver. 3 / AFL Ver. 3
 
