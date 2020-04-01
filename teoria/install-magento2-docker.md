@@ -1,8 +1,11 @@
 # Instalação do magento2 usando img docker lemp + xdebug
 
-Sera necessario uso do docker...
+* Obs => Sera necessário o uso básico do docker... 
+caso não tenha segue link: 
 
-Meta-pacote Magento
+https://github.com/leandrojsantos/docker
+
+Ápos escolher odiretorio e usa docker compose e necessário entra no cotainer do php73 feito isso
 
 O seguinte comando para começar com a instalação do compositor.
 
@@ -18,8 +21,6 @@ Este comando procurará a edição mais recente do Magento2 Open Source dentro d
 No meu caso, é o Magento Open Source versão 2.3.3. O Composer criará um diretório project-community-edition e extrairá nele os arquivos do projeto Magento.
 
 Pode demorar alguns minutos para baixar todas as dependências do projeto Magento2 Open Source.
-
-Como resultado, temos um novo diretório project-community-edition criado onde todos os arquivos do projeto Magento estão localizados.
 
 Navegue para o diretório project-community-edition e observe os arquivos instalados.
 
