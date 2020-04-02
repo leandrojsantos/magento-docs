@@ -1,6 +1,8 @@
 # Instalação do magento2 usando img docker lemp + xdebug
 
-* Obs => Sera necessário o uso básico do docker... 
+* Cadastro no site do magento para criar acess keys, no marktingplace
+
+* Sera necessário o uso básico do docker... 
 caso não tenha segue link: 
 
 https://github.com/leandrojsantos/docker
@@ -9,26 +11,15 @@ https://github.com/leandrojsantos/docker
 
 O seguinte comando para começar com a instalação do compositor.
 
-Código aberto Magento 2
 
     composer create-project --repository=https://repo.magento.com/ magento/project-community-edition
-
-
-Navegue até a raiz do documento do servidor da web e cole o comando de instalação na linha de comandos.
-
-Este comando procurará a edição mais recente do Magento2 Open Source dentro do repositório que especificamos no parâmetro --repository . 
-
-No meu caso, é o Magento Open Source versão 2.3.3. O Composer criará um diretório project-community-edition e extrairá nele os arquivos do projeto Magento.
-
-Pode demorar alguns minutos para baixar todas as dependências do projeto Magento2 Open Source.
 
 Navegue para o diretório project-community-edition e observe os arquivos instalados.
 
     cd project-community-edition/
     ls -la .
 
-Definindo permissões de arquivo
-Para o projeto Open Source do Magento2, precisamos definir permissões de arquivo apropriadas. 
+Definindo permissões de arquivo para o projeto Open Source do Magento2, precisamos definir permissões de arquivo apropriadas. 
 
 A página Instalação do Magento fornece um conjunto de comandos que precisamos executar para definir permissões para arquivos e diretórios de um projeto de código aberto do Magento2.
 
@@ -43,14 +34,14 @@ Você também pode precisar executar mais um comando no diretório do projeto Ma
 Linha de comando
 
     bin/magento setup:install \
-    --base-url=http://magento2ce.com \
+    --base-url=http://magento2ce.nomedalojacom \
     --db-host=localhost \
     --db-name=magento \
     --db-user=magento \
     --db-password=magento \
     --admin-firstname=admin \
     --admin-lastname=admin \
-    --admin-email=admin@admin.com \
+    --admin-email=nomedoadmin@admin.com \
     --admin-user=admin \
     --admin-password=admin123 \
     --language=en_US \

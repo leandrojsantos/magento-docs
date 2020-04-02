@@ -1,13 +1,15 @@
 # Renderização de modelo e layout
 
- Obs pasta MageMastery_FirstLayout (ou nome do modulo), módulo (e o  templete ou layout) 
+Essa é arquitetura de pasta para um modulo, para o registro usar cmd
 
- ![modulo](https://user-images.githubusercontent.com/26981092/78152548-573aee00-7410-11ea-9c47-b4c849b3072a.png)
-
- 
- E o módulo foi registrado com sucesso com o comando da CLI. 
- 
     bin/magento setup:upgradecomando 
+
+![modulo3](https://user-images.githubusercontent.com/26981092/78250088-b870c900-74c5-11ea-8924-8bd2fe34b244.png)
+
+obs  magento2 nao necessario que seguir essa arquitetura poucos sao diretorios fixos (etc/module.xml) devido a namespaces, veja um exemplo de modulo 
+
+ ![modulo](https://user-images.githubusercontent.com/26981092/78152548-573aee00-7410-11ea-9c47-b4c849b3072a.png) 
+
 
 >O registration.phparquivo:
 
@@ -31,7 +33,7 @@
 
 Além disso, adicionei uma route.xml arquivo com uma classe do Action Controller. 
 
-Esses dois arquivos permitem acessar uma página personalizada que foi declarada no MageMastery_FirstLayoutmódulo.
+Esses dois arquivos permitem acessar uma página personalizada que foi declarada no MageMastery_FirstLayout módulo.
 
 O routes.xml conteúdo do arquivo é o seguinte:
 
@@ -68,7 +70,7 @@ E a classe Action Controller localizada no MageMastery/FirstLayout/Controller/Pa
         }
     }
 
- Como você notou, há uma instância da Magento\Framework\View\Result\Pageclasse retornada do execute()método.
+Como você notou, há uma instância da Magento\Framework\View\Result\Pageclasse retornada do execute()método.
 
     return $this->resultFactory->create(ResultFactory::TYPE_PAGE);
 
@@ -130,4 +132,3 @@ Primeiro de tudo, um nome do arquivo de layout deve incluir o ID da rota.
 O ID da rota está localizado no etc/frontend/routes.xml arquivo, este é o magemastery_firstlayoutID. 
 
 A page parte do nome do layout vem de um nome do diretório do controlador. 
-

@@ -8,3 +8,4 @@
 /var/www/.ssh
 /var/www/.viminfo
 /var/www/composer.json
+conf-test.sh
