@@ -1,4 +1,4 @@
-# Exemplos de comando mais utilizados no cli(Interface de Linha de Comando) do magento
+# Exemplos de comando mais utilizados no cli(Interface de Linha de Comando) do magento2
 
 * Como estamos usando uma img docker para rodar magento2 entre nela com cmd `docker-compose exec php73-fpm bash` feito isso verifique o nome da pasta que esta o magento com cmd `ls -la`e entre nela 
 

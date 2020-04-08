@@ -1,10 +1,8 @@
-# Estrutura inicial 
+# Estrutura inicial magento2
 
 Ao criar um novo projeto se cria essa estrutura de pastas onde :
 
 ![pastas](https://user-images.githubusercontent.com/26981092/78052846-141c4480-7356-11ea-9fab-9c0f193373b9.png)
-
-
 
 >O diretório APP
 

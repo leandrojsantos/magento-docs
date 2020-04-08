@@ -7,7 +7,7 @@ caso não tenha segue link:
 
 https://github.com/leandrojsantos/docker
 
-Ápos escolher odiretorio e usa docker compose e necessário entra no cotainer do php73 feito isso
+Ápos escolher o diretorio e usa docker compose e necessário entra no cotainer do php73 feito isso
 
 O seguinte comando para começar com a instalação do compositor.
 
