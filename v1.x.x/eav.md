@@ -1,4 +1,4 @@
-# Magento Estrutura de banco de dados Magento EAV
+## Magento Estrutura de banco de dados Magento EAV
 
 O que é EAV?
 EAV significa entity, attribute e value. 
@@ -13,7 +13,8 @@ Para entender melhor isso, vamos considerar a entity do produto. Cada entity do 
 
 Cada produto terá um value para o nome do attribute (e todos os outros attributes). Isso pode não estar claro ainda, mas continue lendo!
 
-# Como o EAV funciona?
+---
+## Como o EAV funciona?
 
 Antes do Magento, os bancos de dados pareciam muito mais simples. Se você estava projetando um aplicativo de comércio eletrônico, tinha uma tabela que continha todas as informações do seu produto, outra que continha as informações da categoria e talvez outra tabela que unisse essas duas. 
 
@@ -83,7 +84,8 @@ Se você estiver executando um Magento de várias lojas, veja como adaptar o có
           AND var.entity_id = e.entity_id
           AND var.store_id = 0
 
-# Por que o EAV é usado?
+---
+## Por que o EAV é usado?
 
 O EAV é usado porque é muito mais escalável que a estrutura normalizada do banco de dados. Os desenvolvedores podem adicionar attributes a qualquer entity (produto, categoria, cliente, pedido etc.) sem modificar a estrutura do banco de dados principal.
 

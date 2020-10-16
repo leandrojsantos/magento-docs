@@ -1,4 +1,4 @@
-# Magento Layouts, Blocks e Templates
+## Magento Layouts, Blocks e Templates
 
 Diferente de muitos sistemas MVC populares, o Action Controller do Magento não passa um objeto de dados para a visualização nem configura propriedades no objeto de visualização (com algumas exceções). 
 
@@ -37,7 +37,8 @@ O método getLoadedProductCollection pode ser encontrado na classe Block do temp
 
 _GetProductCollection do block instancia templates e lê seus dados, retornando um resultado ao template.
 
-# Nesting Blocks
+---
+## Nesting Blocks
 
 O verdadeiro poder dos block / templates vem com o método getChildHtml . 
 
@@ -63,7 +64,8 @@ O template em si tem apenas 28 linhas. No entanto, cada chamada para $ this-> ge
 
 Esses blocos, por sua vez, usarão getChildHtml para renderizar outros blocos. São blocos todo o caminho.
 
-# O layout
+---
+## O layout
 
 O objeto de layout é um objeto XML que definirá quais blocos serão incluídos em uma página e quais blocos devem iniciar o processo de renderização.
 
@@ -134,7 +136,8 @@ Então, quando você chama o método renderLayout no seu Action Controller, o Ma
 
 Isso sempre é toHtml , e significa que o ponto de partida da saída será o template do block.
 
-# Instanciação de block
+---
+## Instanciação de block
 
 Portanto, dentro de um arquivo XML de Layout, um <block /> tem um "tipo" que é realmente um URI de Nome de Classe Agrupada
 
@@ -169,7 +172,8 @@ Se criarmos um block com o mesmo nome de um block já existente, a nova instânc
 
 O block chamado root foi substituído pelo nosso block, que aponta para um arquivo de template phtml diferente.
 
-# Usando referências
+---
+## Usando referências
 
 `<reference name = ""/>` conectará todas as declarações XML contidas em um block existente com o nome especificado. 
 
@@ -225,7 +229,8 @@ http://example.com/helloworld/?showLayout=handles
 
 Também produzirá um identificador chamado helloworld_index_index
 
-# Layout do package
+---
+## Layout do package
 
 É um arquivo XML grande que contém todas as configurações de layout possíveis para uma instalação específica do Magento. Vamos dar uma olhada nisso usando o módulo Layoutview
 
@@ -239,7 +244,8 @@ Nos bastidores, há as seções <frontend> <layout> <updates /> e <adminhtml> <l
 
 Depois que os arquivos listados na configuração forem combinados, o Magento se fundirá em um último arquivo xml, local.xml. Este é o arquivo em que você pode adicionar suas personalizações à sua instalação do Magento.
 
-# Combinando handles e o layout do package
+---
+## Combinando handles e o layout do package
 
 se você olhar para o Layout do package, verá algumas tags familiares, como `<block />` e `<reference />`, mas todas elas são cercadas por tags que parecem
 
@@ -314,7 +320,8 @@ Carregar as páginas a seguir (depois de limpar o cache do Magento) agora deve p
 http://example.com/helloworld/index/index
 http://example.com/helloworld/index/goodbye
 
-# Iniciando a saída e getChildHtml
+---
+## Iniciando a saída e getChildHtml
 
 Em uma configuração defaulf, a saída começa no block chamado root (porque possui um atributo de saída). Substituímos o template do root com o nosso
 

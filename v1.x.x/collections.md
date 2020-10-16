@@ -1,4 +1,4 @@
-# Varien Data Collections
+## Varien Data Collections
 
 Uma collection de coisas
 Primeiro, vamos criar alguns novos objetos.
@@ -73,7 +73,8 @@ A equipe do Magento nos deu alguns recursos de filtragem rudimentares.
 var_dump ($ collection_of_things-> getItemsByColumnValue ('nome', 'Spot'));
 Coisa legal.
 
-# collections de model
+---
+## collections de model
 
 Isso significa que, se você tem, por exemplo, uma collection de produtos, pode fazer o mesmo tipo de coisa. Vamos dar uma olhada
 
@@ -156,7 +157,8 @@ ou encadear vários
         ->addAttributeToSelect('meta_title')
         ->addAttributeToSelect('price');
 
-# Filtrando collections de bancos de dados
+---
+## Filtrando collections de bancos de dados
 
 O método mais importante em uma collection de banco de dados é addFieldToFilter . 
 
@@ -227,8 +229,8 @@ LEFT JOIN `catalog_product_entity_varchar` AS `_table_meta_title`
     AND (_table_meta_title.store_id='1')
 WHERE (IF(_table_meta_title.value_id>0, _table_meta_title.value, _table_meta_title_default.value) = 'my title')
 
-
-# Outros operadores de comparação
+---
+## Outros operadores de comparação
 
 "e se eu quiser algo diferente de igual por consulta"? Diferente, maior que, menor que etc. 
 
@@ -320,8 +322,8 @@ A especificação de notnull ou null como seu tipo de filtro fornecerá a sintax
 array ("notnull" => true)
 where (e.sku NÃO É NULL)
 
-
-# AND ou OR, ou são OR e AND?
+---
+## AND ou OR, ou são OR e AND?
 
 Finalmente, chegamos aos operadores booleanos. 
 

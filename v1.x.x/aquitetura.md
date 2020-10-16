@@ -1,4 +1,4 @@
-# Estrutura inicial 
+## Estrutura inicial 
 
 Arquitetural do Magento, para implementar interfaces de usuário. 
 Os diagramas mostram a arquitetura do Magento que e baseada em mvc

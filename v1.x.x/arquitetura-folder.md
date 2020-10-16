@@ -1,4 +1,4 @@
-# Estrutura inicial magento1
+## Estrutura inicial magento1
 
 Ao criar um novo projeto se cria essa estrutura de pastas onde :
 

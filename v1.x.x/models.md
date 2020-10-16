@@ -1,4 +1,4 @@
-# Modelos MVC PHP tradicionais
+## Modelos MVC PHP tradicionais
 
 A implementação de uma "camada de modelos" é uma grande parte de qualquer estrutura MVC. Ele representa os dados do seu aplicativo e a maioria dos aplicativos é inútil sem dados.
 
@@ -8,7 +8,8 @@ Abordagem ORM (Object Relational Mapping). Aqui, um desenvolvedor está lidando 
 
 As propriedades são definidas e, quando um método de salvamento é chamado no objeto, os dados são gravados automaticamente no banco de dados.
 
-# Modelos Magento
+---
+## Modelos Magento
 
 A maioria dos modelos Magento pode ser categorizada de uma de duas maneiras. 
 
@@ -24,7 +25,8 @@ Os modelos Magento não contêm código para conexão com o banco de dados. Em v
 
 Ao desacoplar o Modelo lógico e o código que fala com o banco de dados, é teoricamente possível escrever novas classs de recursos para diferentes esquemas e plataformas de banco de dados, mantendo os próprios Modelos intocados.
 
-# Ativar modo de desenvolvedor
+---
+## Ativar modo de desenvolvedor
 
 Algo que você deve fazer no desenvolvimento 
 - mas nunca na produção 
@@ -274,7 +276,8 @@ Limpe o cache do Magento, cruze os dedos, recarregue a página
         'date' => string '2009-07-01 00:00:00' (length=19)
         'timestamp' => string '2009-07-02 16:12:30' (length=19)
 
-# Operações básicas do modelo
+---
+## Operações básicas do modelo
 
 Todos os modelos Magento herdam da class Varien_Object. Esta class faz parte da biblioteca do sistema Magento e não faz parte de nenhum módulo principal do Magento. 
 
@@ -301,7 +304,8 @@ Você pode obter, definir, desarmar ou verificar a existência de qualquer propr
 
 Por esse motivo, convém nomear todas as colunas do banco de dados com caracteres minúsculos e usar underscores para separar caracteres.
 
-# CRUD, o Caminho Magento
+---
+## CRUD, o Caminho Magento
 
 Os modelos Magento suportam a funcionalidade básica Criar, Ler, Atualizar e Excluir do CRUD com métodos de carregamento , salvamento e exclusão .
 
@@ -344,7 +348,8 @@ E, finalmente, você pode excluir sua postagem usando uma sintaxe muito semelhan
         echo 'post removed';
     }
 
-# Coleções de modelos
+---
+## Coleções de modelos
 
 Portanto, ter um único modelo é útil, mas às vezes queremos pegar a lista de modelos. 
 

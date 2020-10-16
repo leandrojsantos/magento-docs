@@ -1,4 +1,4 @@
-# Renderização de modelo e layout
+## Renderização de modelo e layout
 
 Essa é arquitetura de pasta para um modulo, para o registro usar cmd
 
@@ -11,7 +11,7 @@ obs  magento2 nao necessario que seguir essa arquitetura poucos sao diretorios f
  ![modulo](https://user-images.githubusercontent.com/26981092/78152548-573aee00-7410-11ea-9c47-b4c849b3072a.png) 
 
 
->O registration.phparquivo:
+## O registration.phparquivo:
 
     <?php
 
@@ -76,7 +76,7 @@ Como você notou, há uma instância da Magento\Framework\View\Result\Pageclasse
 
 A idéia por trás da criação de um TYPE_PAGEtipo de objeto de resultado é acionar o mecanismo de renderização do Magento 2.
 
->Renderização
+## Renderização
 
 O frontend e o admin html são as duas áreas que podemos usar para renderizar um conteúdo personalizado nas áreas Store front e Admin.
 

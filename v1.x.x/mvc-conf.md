@@ -1,4 +1,4 @@
-# MVC baseado em configuração
+## MVC baseado em configuração
 
 ![mvc2-v1](https://user-images.githubusercontent.com/26981092/78821377-c6d05080-79af-11ea-9c90-2f711cb4ec1b.png)
 
@@ -108,7 +108,8 @@ O CMS Controller verifica o sistema de gerenciamento de conteúdo do Magento par
 
 Por exemplo, a página principal de "índice" do magento é aquela que usa o CMS Controller, que geralmente pode lançar novos usuários para um loop.
 
-# Carregamento de modelo de URI baseado em contexto
+---
+## Carregamento de modelo de URI baseado em contexto
 
 Agora que estamos no ponto de entrada do método Action, queremos começar a instanciar classes que fazem coisas. 
 
@@ -145,7 +146,8 @@ Ao criar seu próprio módulo personalizado, você terá seus próprios nomes de
 
 Você não precisa usar nomes de classes agrupadas para instanciar suas classes. No entanto, como aprenderemos mais adiante, há algumas vantagens em fazer isso.
 
-# Magento Models
+---
+## Magento Models
 
 O Magento, como a maioria das estruturas atualmente, oferece um sistema ORM (Object Relational Mapping). 
 
@@ -192,8 +194,8 @@ As coleções usam a Biblioteca Padrão do PHP para implementar objetos que poss
         echo $product->getName();
     }
 
-
-# Helpers
+---
+## Helpers
 
 As classes Helper do Magento contêm métodos utilitários que permitem executar tarefas comuns em objetos e variáveis. ex
 
@@ -210,8 +212,8 @@ A maioria dos Helpers herda o formulário Mage_Core_Helper_Abstract, que fornece
     $translate_output = $helper -> __ ('Magento é ótimo'); // traduções do estilo gettext
     if ($helper-> isModuleOutputEnabled ()): // está ativado ou desativado este módulo?
 
-
-# Layouts
+---
+## Layouts
 
 Em um sistema PHP MVC típico, depois de manipularmos nossos modelos,
 
@@ -319,7 +321,8 @@ Se, no entanto, tivéssemos algo como:
 No bloco de catálogo / navegação, poderíamos chamar
 $this-> getChildHtml ('foobar');
 
-# Observers
+---
+## Observers
 
 Observer para que os usuários finais se conectem. À medida que certas ações acontecem durante uma solicitação de Página (um Modelo é salvo, um usuário efetua login etc.), o Magento emitirá um sinal de evento.
 
